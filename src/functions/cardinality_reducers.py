@@ -8,6 +8,7 @@ def standard_headers(df):
     df = df.rename(columns={'flight_#': 'flight_no'})
     return df
 
+
 #Header fixer: Sets the brand at the beggining of the string
 
 def antonov_header(x):
@@ -738,6 +739,63 @@ def main_operator_grouper(df):
         df['operator'] = df['operator'].apply(i)
     return df
 
+def country_split(x):
+    z = []
+    z.append(str.rsplit(x, sep=',', maxsplit=1))
+    return (z[-1][-1])
+
+def country_split2(x):
+    z = []
+    z.append(str.rsplit(x, maxsplit=1))
+    return (z[-1][-1])
+
+def country_cleaner_congo(x):
+    index = x.find('DemocratiRepubliof Congo')
+    if index != -1:
+        return 'Democratic Republic of Congo'
+    else:
+        return x
+
+def country_cleaner_congo2(x):
+    index = x.find('DemoctratiRepubliCongo')
+    if index != -1:
+        return 'Democratic Republic of Congo'
+    else:
+        return x
+
+def country_cleaner_congo3(x):
+    index = x.find('DemocratiRepubliCongo')
+    if index != -1:
+        return 'Democratic Republic of Congo'
+    else:
+        return x
+
+def country_cleaner_congo4(x):
+    index = x.find('AtlantiOcean')
+    if index != -1:
+        return 'Atlantic Ocean'
+    else:
+        return x
+
+def states_to_us(x):
+    states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Coloado", "Connecticut", "Delaware", "Florida", "Georgia", 
+              "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", 
+              "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", 
+              "New York", "NY", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", 
+              "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "WY"] 
+    if x in states:
+        return 'United States'
+    else:
+        return x
+
+
+def location_solver(df):
+    location = [country_split, country_cleaner_congo, country_cleaner_congo2, country_cleaner_congo3, country_cleaner_congo4, states_to_us]
+    for i in location:
+        df['location'] = df['location'].apply(i)
+    return df
+
+
 
 #Main cleaning function grouping all previous ones
 def clean_df(df):
@@ -745,4 +803,5 @@ def clean_df(df):
     df = cardinality_reducer_1(df)
     df = cardinality_reducer_2(df)
     df = main_operator_grouper(df)
+    df = location_solver(df)
     return df
