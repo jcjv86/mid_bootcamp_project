@@ -1,8 +1,8 @@
-<h1>MID BOOTCAMP PROJECT<h1><br>
+# H1 MID BOOTCAMP PROJECT
 
-<br><h2>Historic of airplane crashes<h2>
+# H2 Historic of airplane crashes
 
-<br>The following dataset contains a historic with most registered plane crashes all over the world, since the first in 1908 until 2009.
+The following dataset contains a historic with most registered plane crashes all over the world, since the first in 1908 until 2009.
 
 The original dataset provides information on date, time, location, operator, flight no., route, type of aircraft (or model), registration (if any), cn/in (ICAO serial number of the aircraft), people on board, fatalities, ground (ground fatalities, aircraft occupants excluded), and a summary about the aircraft incident.
 
@@ -24,7 +24,7 @@ Also, created additional datasets with 50 values each, done with pandas groupby 
 - Ground deaths (total and civil).
 
 
-I have used tableau to help visualizing the data and build a presentation for it via story.
+I have used tableau to help visualizing the data and build a presentation for it via story:
 
 
 [Link to the final presentation](https://public.tableau.com/app/profile/juan.jimenez7376/viz/MidBootcampProject-Airlinecasualties1907-2009/HistoryofAircraftAccidents?publish=yes)
