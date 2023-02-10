@@ -1,5 +1,9 @@
-notebooks/.ipynb_checkpoints/
 venv/
+notebooks/.ipynb_checkpoints/
 /data/cleaned/.ipynb_checkpoints/
-/src/functions/.ipynb_checkpoints/
+/src/lib/.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/exploratory_notebook-checkpoint.ipynb
+requirements-dev.in
+requirements.in
+.ipynb_checkpoints/
 notebooks/.ipynb_checkpoints/exploratory_notebook-checkpoint.ipynb

@@ -31,10 +31,10 @@ Also, created additional datasets with 50 values each, done with pandas groupby 
 - Ground deaths (total and civil).
 
 
-Notebook folder contains the **exploratory notebook**, which was used to clean and explore the data, and the **main notebook**, where the grouping was made and then exported as additional datasets.
+The *notebooks* folder contains the **exploratory notebook**, which was used to clean and explore the data, and the **main notebook**, where the grouping was made and then exported as additional datasets. Functions used to clean the dataset are located in the *src/lib* folder.
 
 
-I have finally used tableau to help visualizing the data and build a presentation for it via story:
+I have finally used tableau to help visualizing the data and build a presentation for it via story - and multiple dashboards to allow interactions with the graphics. A workbook can also be found in the *slides* folder.
 
 
 

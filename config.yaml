@@ -1,0 +1,4 @@
+lib : "../src/lib/"
+data: 
+  raw: '../data/raw/'
+  clean: '../data/cleaned/'
