@@ -1,13 +1,15 @@
-# MID BOOTCAMP PROJECT
+## MID BOOTCAMP PROJECT
+
+# A history of aircraft accidents (1908-2009)
+
+![Alt text](src/pics/Fort_Myer_Wright_Flyer_crash.jpg?raw=true "Title")
 
 
+### **[Link to the final presentation in Tableau Public](https://public.tableau.com/app/profile/juan.jimenez7376/viz/MidBootcampProject-Airlinecasualties1907-2009/HistoryofAircraftAccidents?publish=yes)**
 
-## Historic of airplane crashes 1908 - 2009
+#
 
-
-
-### The following dataset contains a historic with registered plane crashes all over the world, since the first in 1908 until the last registered in 2009.
-
+## The following dataset contains a historic with registered plane crashes all over the world, since the first in 1908 until the last registered in 2009.
 
 
 The original dataset provides information on date, time, location, operator, flight no., route, type of aircraft (or model), registration (if any), cn/in (ICAO serial number of the aircraft), people on board, fatalities (or passengers and or crew deaths), ground (ground casualties, aircraft occupiers excluded), and a summary about the aircraft incident.
@@ -35,14 +37,6 @@ The *notebooks* folder contains the **exploratory notebook**, which was used to 
 
 
 I have finally used tableau to help visualizing the data and build a presentation for it via story - and multiple dashboards to allow interactions with the graphics. A workbook can also be found in the *slides* folder.
-
-
-
-**[Link to the final presentation](https://public.tableau.com/app/profile/juan.jimenez7376/viz/MidBootcampProject-Airlinecasualties1907-2009/HistoryofAircraftAccidents?publish=yes)**
-
-
-
-
 
 
 *Dataset source*
